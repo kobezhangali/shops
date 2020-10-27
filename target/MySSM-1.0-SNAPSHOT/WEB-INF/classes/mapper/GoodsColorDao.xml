@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.GoodsDao">
+    <select id="getGoodsColor" resultType="com.shop.entity.GoodsAndColor">
+   select g.gid,g.bid,g.gname,g.oprice,g.nprice,c.cid,c.color,
+		c.picture
+		from goods g
+		inner join  info i on i.gid=g.gid
+		inner join  color c on c.iid=i.iid
+</select>
+
+</mapper>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.FavoriteDao">
+
+    <resultMap type="com.shop.entity.Favorite" id="FavoriteMap">
+        <result property="fid" column="fid" jdbcType="INTEGER"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="gid" column="gid" jdbcType="INTEGER"/>
+        <result property="bak01" column="bak01" jdbcType="VARCHAR"/>
+        <result property="bak02" column="bak02" jdbcType="VARCHAR"/>
+        <result property="bak03" column="bak03" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="FavoriteMap">
+        select
+        fid, uid, gid, bak01, bak02, bak03
+        from shopss.favorite
+        where fid = #{fid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="FavoriteMap">
+        select
+        fid, uid, gid, bak01, bak02, bak03
+        from shopss.favorite
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="FavoriteMap">
+        select
+        fid, uid, gid, bak01, bak02, bak03
+        from shopss.favorite
+        <where>
+            <if test="fid != null">
+                and fid = #{fid}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="gid != null">
+                and gid = #{gid}
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                and bak01 = #{bak01}
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                and bak02 = #{bak02}
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                and bak03 = #{bak03}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="fid" useGeneratedKeys="true">
+        insert into shopss.favorite(uid, gid, bak01, bak02, bak03)
+        values (#{uid}, #{gid}, #{bak01}, #{bak02}, #{bak03})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="fid" useGeneratedKeys="true">
+        insert into shopss.favorite(uid, gid, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uid}, #{entity.gid}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="fid" useGeneratedKeys="true">
+        insert into shopss.favorite(uid, gid, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.uid}, #{entity.gid}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+        on duplicate key update
+        uid = values(uid) , gid = values(gid) , bak01 = values(bak01) , bak02 = values(bak02) , bak03 = values(bak03)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update shopss.favorite
+        <set>
+            <if test="uid != null">
+                uid = #{uid},
+            </if>
+            <if test="gid != null">
+                gid = #{gid},
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                bak01 = #{bak01},
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                bak02 = #{bak02},
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                bak03 = #{bak03},
+            </if>
+        </set>
+        where fid = #{fid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from shopss.favorite where fid = #{fid}
+    </delete>
+
+</mapper>

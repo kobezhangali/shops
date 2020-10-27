@@ -1,7 +1,7 @@
 package com.shop.service.impl;
 
-import com.shop.entity.Favorite;
 import com.shop.dao.FavoriteDao;
+import com.shop.entity.Favorite;
 import com.shop.service.FavoriteService;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +25,7 @@ public class FavoriteServiceImpl implements FavoriteService {
      * @param fid 主键
      * @return 实例对象
      */
-    @Override
+
     public Favorite queryById(Integer fid) {
         return this.favoriteDao.queryById(fid);
     }
@@ -37,7 +37,7 @@ public class FavoriteServiceImpl implements FavoriteService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    @Override
+
     public List<Favorite> queryAllByLimit(int offset, int limit) {
         return this.favoriteDao.queryAllByLimit(offset, limit);
     }
@@ -48,7 +48,7 @@ public class FavoriteServiceImpl implements FavoriteService {
      * @param favorite 实例对象
      * @return 实例对象
      */
-    @Override
+
     public Favorite insert(Favorite favorite) {
         this.favoriteDao.insert(favorite);
         return favorite;
@@ -60,7 +60,7 @@ public class FavoriteServiceImpl implements FavoriteService {
      * @param favorite 实例对象
      * @return 实例对象
      */
-    @Override
+
     public Favorite update(Favorite favorite) {
         this.favoriteDao.update(favorite);
         return this.queryById(favorite.getFid());
@@ -72,7 +72,7 @@ public class FavoriteServiceImpl implements FavoriteService {
      * @param fid 主键
      * @return 是否成功
      */
-    @Override
+
     public boolean deleteById(Integer fid) {
         return this.favoriteDao.deleteById(fid) > 0;
     }

@@ -1,6 +1,7 @@
 package com.shop.dao;
 
 import com.shop.entity.Goods;
+import com.shop.entity.GoodsAndColor;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -20,6 +21,10 @@ public interface GoodsDao {
      * @return 实例对象
      */
     Goods queryById(Integer gid);
+    //查询全部
+    List<Goods> AllQuery();
+    //查询带照片的全部商品
+    List<GoodsAndColor> getGoodsColor();
 
     /**
      * 查询指定行数据

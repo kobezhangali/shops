@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.GoodsAllDao">
+<select id="getGoodsAll" resultType="com.shop.entity.GoodsAll">
+   select g.gid,g.gname,g.oprice,g.nprice,i.iid,i.texture,i.model,c.cid,c.color,
+				c.picture,e.eid,e.content,s.sid,s.size
+			 from goods g
+			inner join  info i on i.gid=g.gid
+			inner join evaluate e on e.gid=g.gid
+			inner join size s on s.iid=i.iid
+			inner join  color c on c.iid=i.iid
+where g.gid=#{gid}
+</select>
+
+</mapper>

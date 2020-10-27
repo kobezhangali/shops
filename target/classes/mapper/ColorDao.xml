@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.ColorDao">
+
+    <resultMap type="com.shop.entity.Color" id="ColorMap">
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
+        <result property="iid" column="iid" jdbcType="INTEGER"/>
+        <result property="color" column="color" jdbcType="VARCHAR"/>
+        <result property="picture" column="picture" jdbcType="VARCHAR"/>
+        <result property="bak01" column="bak01" jdbcType="VARCHAR"/>
+        <result property="bak02" column="bak02" jdbcType="VARCHAR"/>
+        <result property="bak03" column="bak03" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ColorMap">
+        select
+        cid, iid, color, picture, bak01, bak02, bak03
+        from shopss.color
+        where cid = #{cid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ColorMap">
+        select
+        cid, iid, color, picture, bak01, bak02, bak03
+        from shopss.color
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="ColorMap">
+        select
+        cid, iid, color, picture, bak01, bak02, bak03
+        from shopss.color
+        <where>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
+            <if test="iid != null">
+                and iid = #{iid}
+            </if>
+            <if test="color != null and color != ''">
+                and color = #{color}
+            </if>
+            <if test="picture != null and picture != ''">
+                and picture = #{picture}
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                and bak01 = #{bak01}
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                and bak02 = #{bak02}
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                and bak03 = #{bak03}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="cid" useGeneratedKeys="true">
+        insert into shopss.color(iid, color, picture, bak01, bak02, bak03)
+        values (#{iid}, #{color}, #{picture}, #{bak01}, #{bak02}, #{bak03})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="cid" useGeneratedKeys="true">
+        insert into shopss.color(iid, color, picture, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.iid}, #{entity.color}, #{entity.picture}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="cid" useGeneratedKeys="true">
+        insert into shopss.color(iid, color, picture, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.iid}, #{entity.color}, #{entity.picture}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+        on duplicate key update
+        iid = values(iid) , color = values(color) , picture = values(picture) , bak01 = values(bak01) , bak02 =
+        values(bak02) , bak03 = values(bak03)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update shopss.color
+        <set>
+            <if test="iid != null">
+                iid = #{iid},
+            </if>
+            <if test="color != null and color != ''">
+                color = #{color},
+            </if>
+            <if test="picture != null and picture != ''">
+                picture = #{picture},
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                bak01 = #{bak01},
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                bak02 = #{bak02},
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                bak03 = #{bak03},
+            </if>
+        </set>
+        where cid = #{cid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from shopss.color where cid = #{cid}
+    </delete>
+
+</mapper>

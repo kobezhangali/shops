@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MySSM:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd4e7ebd-d870-4ccb-9c08-783cb9d1ed21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/42133273-04ad-4ca7-a608-facaa2e77c04/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bedf5873-8dd4-4f0a-a1c2-1baf582909ad/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/GoodsAllController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/GoodsAndColorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/GoodsUserAndFavoriteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/dao/GoodsAllDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/dao/GoodsAndColorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/dao/GoodsUserAndFavoriteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/entity/GoodsAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/entity/GoodsAndColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/entity/GoodsUserAndFavorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/GoodsAllService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/GoodsAndColorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/GoodsUserAndFavoriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/GoodsAllServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/GoodsAndColorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/GoodsUserAndFavoriteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsAndColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsUserAndFavoriteDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsaAllDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/AttentionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/BrandController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/CartitemsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/ColorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/EvaluateController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/FavoriteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/GoodsAllController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/GoodsAndColorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/GoodsUserAndFavoriteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/InfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/SizeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/TypeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/AttentionDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/BrandDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/CartDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/CartitemsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/ColorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/EvaluateDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/FavoriteDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/GoodsAllDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/GoodsAndColorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/GoodsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/GoodsUserAndFavoriteDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/InfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/SizeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/TypeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Attention.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Cartitems.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Evaluate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Favorite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/GoodsAll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/GoodsAndColor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/GoodsUserAndFavorite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Size.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/Type.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/AttentionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/CartitemsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/ColorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/EvaluateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/FavoriteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/GoodsAllService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/GoodsAndColorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/GoodsUserAndFavoriteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/InfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/SizeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/TypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/AttentionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/CartitemsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/ColorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/EvaluateServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/FavoriteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/GoodsAllServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/GoodsAndColorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/GoodsUserAndFavoriteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/InfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/SizeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/TypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/com/shop/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/AttentionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/BrandDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/CartDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/CartitemsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/ColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/EvaluateDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/FavoriteDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/GoodsAndColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/GoodsColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/GoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/GoodsUserAndFavoriteDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/GoodsaAllDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/SizeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/TypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.16.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MySSM-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/AttentionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/BrandController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/CartitemsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/ColorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/EvaluateController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/FavoriteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/GoodsAllController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/GoodsAndColorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/GoodsUserAndFavoriteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/InfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/SizeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/TypeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/AttentionDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/BrandDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/CartDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/CartitemsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/ColorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/EvaluateDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/FavoriteDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/GoodsAllDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/GoodsAndColorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/GoodsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/GoodsUserAndFavoriteDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/InfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/SizeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/TypeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Attention.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Cartitems.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Evaluate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Favorite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/GoodsAll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/GoodsAndColor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/GoodsUserAndFavorite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Size.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/Type.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/AttentionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/CartitemsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/ColorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/EvaluateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/FavoriteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/GoodsAllService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/GoodsAndColorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/GoodsUserAndFavoriteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/InfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/SizeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/TypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/AttentionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/CartitemsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/ColorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/EvaluateServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/FavoriteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/GoodsAllServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/GoodsAndColorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/GoodsUserAndFavoriteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/InfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/SizeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/TypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/shop/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/AttentionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/BrandDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CartDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CartitemsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/EvaluateDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/FavoriteDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsAndColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsColorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsUserAndFavoriteDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsaAllDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/SizeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/TypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/FavoriteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/FavoriteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/FavoriteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/FavoriteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shop/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsDao.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\tools\IDEA\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jRcnV7uLlh9nBUoYQ0G4nK7xZU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shop/controller" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tools\IDEA\IDEAProjects\shops\src\main\java\com\shop\controller" />
+      <recent name="D:\tools\IDEA\IDEAProjects\shops\src\main\java\com\shop\service\impl" />
+      <recent name="D:\tools\IDEA\IDEAProjects\shops\src\main\java\com\shop\service" />
+      <recent name="D:\tools\IDEA\IDEAProjects\shops\src\main\java\com\shop\dao" />
+      <recent name="D:\tools\IDEA\IDEAProjects\shops\src\main\java\com\shop\entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="MySSM:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/MySSM_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_shops" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3586" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MySSM:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd4e7ebd-d870-4ccb-9c08-783cb9d1ed21" name="Default Changelist" comment="" />
+      <created>1603770512019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603770512019</updated>
+      <workItem from="1603770513896" duration="3901000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603777923289">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1603777923289" />
+    <state width="845" height="27" key="GridCell.Tab.0.bottom" timestamp="1603780115147">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1603780115147" />
+    <state width="845" height="27" key="GridCell.Tab.0.center" timestamp="1603780115147">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1603780115147" />
+    <state width="845" height="27" key="GridCell.Tab.0.left" timestamp="1603780115146">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1603780115146" />
+    <state width="845" height="27" key="GridCell.Tab.0.right" timestamp="1603780115147">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1603780115147" />
+    <state width="845" height="27" key="GridCell.Tab.1.bottom" timestamp="1603780114848">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1603780114848" />
+    <state width="845" height="27" key="GridCell.Tab.1.center" timestamp="1603780114848">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1603780114848" />
+    <state width="845" height="27" key="GridCell.Tab.1.left" timestamp="1603780114848">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1603780114848" />
+    <state width="845" height="27" key="GridCell.Tab.1.right" timestamp="1603780114848">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1603780114848" />
+    <state width="845" height="27" key="GridCell.Tab.2.bottom" timestamp="1603780114849">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1603780114849" />
+    <state width="845" height="27" key="GridCell.Tab.2.center" timestamp="1603780114849">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1603780114849" />
+    <state width="845" height="27" key="GridCell.Tab.2.left" timestamp="1603780114849">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1603780114849" />
+    <state width="845" height="27" key="GridCell.Tab.2.right" timestamp="1603780114849">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="845" height="27" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1603780114849" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1603779974649">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1603779974649" />
+  </component>
+</project>

@@ -1,6 +1,7 @@
 package com.shop.service;
 
 import com.shop.entity.Goods;
+import com.shop.entity.GoodsAndColor;
 
 import java.util.List;
 
@@ -19,6 +20,12 @@ public interface GoodsService {
      * @return 实例对象
      */
     Goods queryById(Integer gid);
+
+    //查询全部
+    List<Goods> AllQuery();
+
+    //查询全部带照片商品
+    List<GoodsAndColor> getGoodsColor();
 
     /**
      * 查询多条数据

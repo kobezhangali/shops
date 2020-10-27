@@ -82,7 +82,7 @@ public class CartController {
                     Cartitems update = cartitemsService.update(new Cartitems(ctid, id, gid, sid, cid, counts + 1, null, null, null));
                     Integer num = cart.getNum();
                     Object price = cart.getPrice();
-                    Object prices=(double)price+nprice;
+                    Object prices=(Double)price+nprice;
                     cartService.update(new Cart(id,uid,num+1,prices,null,null,null));
                     Cart cart1 = cartService.queryByUid(uid);
                     info.setSize(size);
@@ -98,7 +98,7 @@ public class CartController {
             goods.setInfo(info);
             Object price = cart.getPrice();
             Integer num = cart.getNum();
-            Object prices=(double)price+nprice;
+            Object prices=(Double)price+nprice;
             Cartitems cartitems = cartitemsService.insert(new Cartitems(id, gid, sid, cid, 1, null, null, null));
             cartitems.setGoods(goods);
             Cart cart1 = cartService.update(new Cart(id, uid, num + 1, prices, null, null, null));

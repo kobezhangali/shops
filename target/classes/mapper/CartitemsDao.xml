@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.CartitemsDao">
+
+    <resultMap type="com.shop.entity.Cartitems" id="CartitemsMap">
+        <result property="ctid" column="ctid" jdbcType="INTEGER"/>
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="gid" column="gid" jdbcType="INTEGER"/>
+        <result property="sid" column="sid" jdbcType="INTEGER"/>
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
+        <result property="counts" column="counts" jdbcType="INTEGER"/>
+        <result property="bak01" column="bak01" jdbcType="VARCHAR"/>
+        <result property="bak02" column="bak02" jdbcType="VARCHAR"/>
+        <result property="bak03" column="bak03" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CartitemsMap">
+        select
+          ctid, id, gid, sid, cid, counts, bak01, bak02, bak03
+        from shopss.cartitems
+        where ctid = #{ctid}
+    </select>
+
+    <select id="queryByCartitems" resultMap="CartitemsMap">
+        select
+          ctid, id, gid, sid, cid, counts, bak01, bak02, bak03
+        from shopss.cartitems
+        where id = #{id} and gid = #{gid} and cid = #{cid} and sid = #{sid}
+    </select>
+
+    <select id="queryByid" resultMap="CartitemsMap">
+        select
+          ctid, id, gid, sid, cid, counts, bak01, bak02, bak03
+        from shopss.cartitems
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CartitemsMap">
+        select
+          ctid, id, gid, sid, cid, counts, bak01, bak02, bak03
+        from shopss.cartitems
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="CartitemsMap">
+        select
+        ctid, id, gid, sid, cid, counts, bak01, bak02, bak03
+        from shopss.cartitems
+        <where>
+            <if test="ctid != null">
+                and ctid = #{ctid}
+            </if>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="gid != null">
+                and gid = #{gid}
+            </if>
+            <if test="sid != null">
+                and sid = #{sid}
+            </if>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
+            <if test="counts != null">
+                and counts = #{counts}
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                and bak01 = #{bak01}
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                and bak02 = #{bak02}
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                and bak03 = #{bak03}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="ctid" useGeneratedKeys="true">
+        insert into shopss.cartitems(id, gid, sid, cid, counts, bak01, bak02, bak03)
+        values (#{id}, #{gid}, #{sid}, #{cid}, #{counts}, #{bak01}, #{bak02}, #{bak03})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="ctid" useGeneratedKeys="true">
+        insert into shopss.cartitems(id, gid, sid, cid, counts, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.id}, #{entity.gid}, #{entity.sid}, #{entity.cid}, #{entity.counts}, #{entity.bak01},
+            #{entity.bak02}, #{entity.bak03})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="ctid" useGeneratedKeys="true">
+        insert into shopss.cartitems(id, gid, sid, cid, counts, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.id}, #{entity.gid}, #{entity.sid}, #{entity.cid}, #{entity.counts}, #{entity.bak01},
+            #{entity.bak02}, #{entity.bak03})
+        </foreach>
+        on duplicate key update
+        id = values(id) , gid = values(gid) , sid = values(sid) , cid = values(cid) , counts = values(counts) , bak01 =
+        values(bak01) , bak02 = values(bak02) , bak03 = values(bak03)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update shopss.cartitems
+        <set>
+            <if test="id != null">
+                id = #{id},
+            </if>
+            <if test="gid != null">
+                gid = #{gid},
+            </if>
+            <if test="sid != null">
+                sid = #{sid},
+            </if>
+            <if test="cid != null">
+                cid = #{cid},
+            </if>
+            <if test="counts != null">
+                counts = #{counts},
+            </if>
+                bak01 = #{bak01},
+                bak02 = #{bak02},
+                bak03 = #{bak03},
+        </set>
+        where ctid = #{ctid}
+    </update>
+
+    <update id="updateByIdAndGidAndCidAndSid">
+        update cartitems set counts =#{counts} where id=#{id} and gid=#{gid} and cid=#{cid} and sid=#{sid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from shopss.cartitems where ctid = #{ctid}
+    </delete>
+
+    <delete id="deleteByid">
+        delete from shopss.cartitems where id = #{id}
+    </delete>
+    <delete id="deleteBySidAndCid">
+        delete from shopss.cartitems where id = #{id} and gid=#{gid} and sid=#{sid} and cid=#{cid}
+    </delete>
+</mapper>

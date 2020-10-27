@@ -1,7 +1,8 @@
 package com.shop.service.impl;
 
-import com.shop.entity.Goods;
 import com.shop.dao.GoodsDao;
+import com.shop.entity.Goods;
+import com.shop.entity.GoodsAndColor;
 import com.shop.service.GoodsService;
 import org.springframework.stereotype.Service;
 
@@ -25,10 +26,19 @@ public class GoodsServiceImpl implements GoodsService {
      * @param gid 主键
      * @return 实例对象
      */
-    @Override
+
     public Goods queryById(Integer gid) {
         return this.goodsDao.queryById(gid);
     }
+
+    public List<Goods> AllQuery() {
+        return this.goodsDao.AllQuery();
+    }
+
+    public List<GoodsAndColor> getGoodsColor() {
+        return goodsDao.getGoodsColor();
+    }
+
 
     /**
      * 查询多条数据
@@ -37,7 +47,7 @@ public class GoodsServiceImpl implements GoodsService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    @Override
+
     public List<Goods> queryAllByLimit(int offset, int limit) {
         return this.goodsDao.queryAllByLimit(offset, limit);
     }
@@ -48,7 +58,7 @@ public class GoodsServiceImpl implements GoodsService {
      * @param goods 实例对象
      * @return 实例对象
      */
-    @Override
+
     public Goods insert(Goods goods) {
         this.goodsDao.insert(goods);
         return goods;
@@ -60,7 +70,7 @@ public class GoodsServiceImpl implements GoodsService {
      * @param goods 实例对象
      * @return 实例对象
      */
-    @Override
+
     public Goods update(Goods goods) {
         this.goodsDao.update(goods);
         return this.queryById(goods.getGid());
@@ -72,7 +82,7 @@ public class GoodsServiceImpl implements GoodsService {
      * @param gid 主键
      * @return 是否成功
      */
-    @Override
+
     public boolean deleteById(Integer gid) {
         return this.goodsDao.deleteById(gid) > 0;
     }

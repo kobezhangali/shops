@@ -1,10 +1,14 @@
 package com.shop.controller;
 
 import com.shop.entity.Goods;
+import com.shop.entity.GoodsAndColor;
 import com.shop.service.GoodsService;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * (Goods)表控制层
@@ -30,6 +34,16 @@ public class GoodsController {
     @GetMapping("selectOne")
     public Goods selectOne(Integer id) {
         return this.goodsService.queryById(id);
+    }
+    //查询所有商品
+    @GetMapping("selectAll")
+    public List<Goods> selectAll(){
+        return this.goodsService.AllQuery();
+    }
+    //查询带图片的所有商品
+    @GetMapping("getGoodsColor")
+    public List<GoodsAndColor> getGoodsColor(){
+        return goodsService.getGoodsColor();
     }
 
 }

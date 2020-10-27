@@ -31,5 +31,15 @@ public class FavoriteController {
     public Favorite selectOne(Integer id) {
         return this.favoriteService.queryById(id);
     }
+    //用户添加收藏
+    @PostMapping("/insertFavorite")
+    public Favorite insert(Favorite favorite){
+        return this.favoriteService.insert(favorite);
+    }
+    //删除收藏
+    @GetMapping("/deleteFavoriteById/{fid}")
+    public boolean deleteFavoriteById(@PathVariable("fid") int fid){
+        return this.favoriteService.deleteById(fid);
+    }
 
 }

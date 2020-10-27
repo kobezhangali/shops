@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.SizeDao">
+
+    <resultMap type="com.shop.entity.Size" id="SizeMap">
+        <result property="sid" column="sid" jdbcType="INTEGER"/>
+        <result property="iid" column="iid" jdbcType="INTEGER"/>
+        <result property="size" column="size" jdbcType="INTEGER"/>
+        <result property="bak01" column="bak01" jdbcType="VARCHAR"/>
+        <result property="bak02" column="bak02" jdbcType="VARCHAR"/>
+        <result property="bak03" column="bak03" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="SizeMap">
+        select
+        sid, iid, size, bak01, bak02, bak03
+        from shopss.size
+        where sid = #{sid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="SizeMap">
+        select
+        sid, iid, size, bak01, bak02, bak03
+        from shopss.size
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="SizeMap">
+        select
+        sid, iid, size, bak01, bak02, bak03
+        from shopss.size
+        <where>
+            <if test="sid != null">
+                and sid = #{sid}
+            </if>
+            <if test="iid != null">
+                and iid = #{iid}
+            </if>
+            <if test="size != null">
+                and size = #{size}
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                and bak01 = #{bak01}
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                and bak02 = #{bak02}
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                and bak03 = #{bak03}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="sid" useGeneratedKeys="true">
+        insert into shopss.size(iid, size, bak01, bak02, bak03)
+        values (#{iid}, #{size}, #{bak01}, #{bak02}, #{bak03})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="sid" useGeneratedKeys="true">
+        insert into shopss.size(iid, size, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.iid}, #{entity.size}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="sid" useGeneratedKeys="true">
+        insert into shopss.size(iid, size, bak01, bak02, bak03)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.iid}, #{entity.size}, #{entity.bak01}, #{entity.bak02}, #{entity.bak03})
+        </foreach>
+        on duplicate key update
+        iid = values(iid) , size = values(size) , bak01 = values(bak01) , bak02 = values(bak02) , bak03 = values(bak03)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update shopss.size
+        <set>
+            <if test="iid != null">
+                iid = #{iid},
+            </if>
+            <if test="size != null">
+                size = #{size},
+            </if>
+            <if test="bak01 != null and bak01 != ''">
+                bak01 = #{bak01},
+            </if>
+            <if test="bak02 != null and bak02 != ''">
+                bak02 = #{bak02},
+            </if>
+            <if test="bak03 != null and bak03 != ''">
+                bak03 = #{bak03},
+            </if>
+        </set>
+        where sid = #{sid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from shopss.size where sid = #{sid}
+    </delete>
+
+</mapper>
